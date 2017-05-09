@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_settings"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.arakjel.arakscompass.activities.SettingsActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/img_background"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/backgroundImageView" />
+
+    <ImageView
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:srcCompat="@drawable/img_arrow"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/arrowImageView" />
+
+    <CheckBox
+        android:text=""
+        android:checked="true"
+        android:button="@null"
+        android:background="@drawable/custom_checkbox"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/trueHeadingCheckBox"
+        android:layout_alignStart="@+id/trueHeadingCheckBox"
+        android:layout_marginTop="12dp"
+        android:id="@+id/magneticFieldCheckBox" />
+
+    <CheckBox
+        android:text=""
+        android:checked="true"
+        android:button="@null"
+        android:background="@drawable/custom_checkbox"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:id="@+id/longitudeCheckBox"
+        android:layout_below="@+id/magneticFieldCheckBox"
+        android:layout_marginTop="12dp"
+        android:layout_alignStart="@+id/magneticFieldCheckBox" />
+
+    <CheckBox
+        android:text=""
+        android:checked="true"
+        android:button="@null"
+        android:background="@drawable/custom_checkbox"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/longitudeCheckBox"
+        android:layout_alignStart="@+id/longitudeCheckBox"
+        android:layout_marginTop="12dp"
+        android:id="@+id/latitudeCheckBox" />
+
+    <TextView
+        android:text="True Heading"
+        style="@style/MediumFont"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/trueHeadingTextView"
+        android:layout_alignBaseline="@+id/trueHeadingCheckBox"
+        android:layout_alignBottom="@+id/trueHeadingCheckBox"
+        android:layout_toEndOf="@+id/trueHeadingCheckBox" />
+
+    <TextView
+        android:text="Magnetic Field"
+        style="@style/MediumFont"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/magneticFieldTextView"
+        android:layout_alignBaseline="@+id/magneticFieldCheckBox"
+        android:layout_alignBottom="@+id/magneticFieldCheckBox"
+        android:layout_toEndOf="@+id/magneticFieldCheckBox" />
+
+    <TextView
+        android:text="Longitude"
+        style="@style/MediumFont"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/longitudeTextView"
+        android:layout_alignBaseline="@+id/longitudeCheckBox"
+        android:layout_alignBottom="@+id/longitudeCheckBox"
+        android:layout_toEndOf="@+id/longitudeCheckBox" />
+
+    <TextView
+        android:text="Latitude"
+        style="@style/MediumFont"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/latitudeTextView"
+        android:layout_alignBaseline="@+id/latitudeCheckBox"
+        android:layout_alignBottom="@+id/latitudeCheckBox"
+        android:layout_toEndOf="@+id/latitudeCheckBox" />
+
+    <CheckBox
+        android:text=""
+        android:checked="true"
+        android:button="@null"
+        android:background="@drawable/custom_checkbox"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="145dp"
+        android:id="@+id/trueHeadingCheckBox"
+        android:layout_marginStart="70dp"
+        android:layout_below="@+id/arrowImageView"
+        android:layout_toEndOf="@+id/arrowImageView" />
+
+</RelativeLayout>

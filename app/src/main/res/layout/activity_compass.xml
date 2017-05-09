@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_compass"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.arakjel.arakscompass.activities.CompassActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@drawable/img_background"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/backgroundImageView" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <com.example.arakjel.arakscompass.controls.MenuControl
+                android:id="@+id/customMenuView"
+                android:layout_width="250dp"
+                android:layout_height="250dp">
+            </com.example.arakjel.arakscompass.controls.MenuControl>
+
+            <ImageView
+                android:layout_width="340dp"
+                android:layout_height="340dp"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/compassImageView" />
+
+            <RelativeLayout
+                android:layout_width="200dp"
+                android:layout_height="48dp"
+                android:id="@+id/geoDataHolder"
+                android:background="@drawable/background_border"
+                android:layout_below="@+id/compassImageView"
+                android:layout_centerHorizontal="true">
+
+                <TextView
+                    android:text="Latitude:"
+                    style="@style/DataFontReadOnly"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/latitudeReadOnlyTextView" />
+
+                <TextView
+                    android:text="Longitude:"
+                    style="@style/DataFontReadOnly"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:id="@+id/longitudeReadOnlyTextView"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignStart="@+id/latitudeReadOnlyTextView" />
+
+                <TextView
+                    android:text="N/A"
+                    style="@style/DataFont"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/latitudeTextView"
+                    android:layout_marginStart="85dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="5dp"/>
+
+                <TextView
+                    android:text="N/A"
+                    style="@style/DataFont"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/longitudeTextView"
+                    android:layout_marginStart="85dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="5dp"/>
+
+            </RelativeLayout>
+
+            <TextView
+                android:text="magnetic"
+                style="@style/DataFontLowMarginLeft"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/magneticStrengthTextView"
+                android:layout_marginTop="14dp"
+                android:layout_below="@+id/geoDataHolder"
+                android:layout_toEndOf="@+id/magneticStrengthTextViewReadOnly"
+                android:layout_marginStart="13dp" />
+
+            <TextView
+                android:text="Magnetic field strength: "
+                style="@style/DataFontLowMarginLeft"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/magneticStrengthTextViewReadOnly"
+                android:layout_alignBaseline="@+id/magneticStrengthTextView"
+                android:layout_alignBottom="@+id/magneticStrengthTextView"
+                android:layout_alignStart="@+id/geoDataHolder" />
+
+            <TextView
+                android:text="..."
+                style="@style/DataFont"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/trueHeadingTextView"
+                android:layout_marginTop="65dp"
+                android:layout_marginStart="210dp" />
+
+            <TextView
+                android:text="True heading: "
+                style="@style/DataFont"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/trueHeadingTextViewReadOnly"
+                android:layout_marginTop="65dp"
+                android:layout_marginStart="120dp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+    <TextClock
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp"
+        android:textColor="@color/colorSea"
+        android:textSize="@dimen/data_font_size"
+        android:id="@+id/textClock" />
+
+</RelativeLayout>

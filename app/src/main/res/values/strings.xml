@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">AraksCompass</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="how_to_calibrate">
+        In order to calibrate your device please,
+        move your phone in the motion shown above, or rotate it through the axis.
+    </string>
+    <string name="about">
+        Application is fully free of charge. Compass may have problems inside
+        buildings and basements. \nCallibration which is presented in the application
+        is a common way \nto callibrate most of the devices. \nIf after these steps
+        compass still not working in a proper way, probably \nthere is something
+        wrong with your device sensors. \n\n\nThank you very much for downloading
+        this application and enjoy.
+    </string>
+</resources>

@@ -1,0 +1,50 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="DataFontReadOnly">
+        <item name="android:textColor">@color/colorSea</item>
+        <item name="android:textSize">@dimen/data_font_size</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:layout_alignParentStart">true</item>
+    </style>
+
+    <style name="DataFont">
+        <item name="android:textColor">@color/colorSea</item>
+        <item name="android:textSize">@dimen/data_font_size</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">12dp</item>
+    </style>
+
+    <style name="DataFontLowMarginLeft">
+        <item name="android:textColor">@color/colorSea</item>
+        <item name="android:textSize">@dimen/data_font_size</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">5dp</item>
+    </style>
+
+    <style name="HeaderFont">
+        <item name="android:textColor">@color/colorSea</item>
+        <item name="android:textSize">@dimen/header_font_size</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="MediumFont">
+        <item name="android:textColor">@color/colorSea</item>
+        <item name="android:textSize">@dimen/medium_font_size</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+</resources>
